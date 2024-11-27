@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Home
+title: Power Outages Analysis
 ---
 
-# Welcome to My Website
+# Analyzing Power Outages: DSC 80 Final Project
 
-This is my first Jekyll website hosted on GitHub Pages!
+By: Gautham Kishore and Hrithik Pai
