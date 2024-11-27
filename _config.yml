@@ -1,0 +1,5 @@
+title: My Jekyll Website
+description: My first Jekyll website
+baseurl: ""
+url: ""
+theme: minima
