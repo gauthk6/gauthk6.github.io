@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #ffffff; /* White background */
+  --foreground: #111827; /* Dark gray text (gray-900) */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff; /* Enforce white background for dark mode */
+    --foreground: #111827; /* Enforce dark gray text for dark mode */
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  /* font-family will be applied via Tailwind's font-sans in layout.tsx */
+}
