@@ -10,7 +10,6 @@ const About = () => {
             alt="Gautham Kishore"
             className="w-48 h-48 rounded-full object-cover shadow-lg"
             loading="eager"
-            style={{ imageRendering: '-webkit-optimize-contrast' }}
           />
           <a
             href="/GauthamKishore.pdf"
