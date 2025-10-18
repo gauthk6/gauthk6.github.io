@@ -61,7 +61,7 @@ const Header = () => {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-primary-600 transition-colors duration-200"
+                className="text-gray-600 hover:text-primary-600 hover:scale-110 transition-all duration-200"
                 aria-label={link.name}
               >
                 {link.icon}

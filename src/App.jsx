@@ -4,7 +4,6 @@ import About from './components/About';
 import ResearchInterests from './components/ResearchInterests';
 import Experience from './components/Experience';
 import Publications from './components/Publications';
-import Personal from './components/Personal';
 import Footer from './components/Footer';
 
 function App() {
@@ -22,7 +21,6 @@ function App() {
         <ResearchInterests />
         <Experience />
         <Publications />
-        <Personal />
       </main>
       <Footer />
     </div>
