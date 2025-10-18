@@ -38,7 +38,7 @@ const About = () => {
           <div className="prose prose-lg text-gray-700 space-y-4">
             <p>
               I'm a fourth-year undergraduate at{' '}
-              <a href="https://ucsd.edu/" target="_blank" rel="noopener noreferrer" className="link-hover whitespace-nowrap">
+              <a href="https://ucsd.edu/" target="_blank" rel="noopener noreferrer" className="link-hover inline-flex items-center">
                 UC San Diego
                 <svg className="external-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -48,21 +48,21 @@ const About = () => {
             </p>
             <p>
               I'm currently leading a project on <strong>Deep Research Agents</strong> under the guidance of Professor{' '}
-              <a href="https://zhiting.ucsd.edu/" target="_blank" rel="noopener noreferrer" className="link-hover whitespace-nowrap">
+              <a href="https://zhiting.ucsd.edu/" target="_blank" rel="noopener noreferrer" className="link-hover inline-flex items-center">
                 Zhiting Hu
                 <svg className="external-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>{' '}
               at the{' '}
-              <a href="https://datascience.ucsd.edu/" target="_blank" rel="noopener noreferrer" className="link-hover whitespace-nowrap">
+              <a href="https://datascience.ucsd.edu/" target="_blank" rel="noopener noreferrer" className="link-hover inline-flex items-center">
                 Halıcıoğlu Data Science Institute
                 <svg className="external-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
               , where I previously <strong>co-authored a paper accepted to ACL 2025</strong> on whether vision-language models understand physical dynamics. Previously, I helped develop reinforcement learning systems for neural code translation at the University of Waterloo under Professor{' '}
-              <a href="https://vganesh1.github.io/" target="_blank" rel="noopener noreferrer" className="link-hover whitespace-nowrap">
+              <a href="https://vganesh1.github.io/" target="_blank" rel="noopener noreferrer" className="link-hover inline-flex items-center">
                 Vijay Ganesh
                 <svg className="external-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -72,7 +72,7 @@ const About = () => {
             </p>
             <p>
               In industry, I work as an AI Engineer Intern at a stealth startup building search agents, and previously interned at{' '}
-              <a href="https://legion.co/" target="_blank" rel="noopener noreferrer" className="link-hover whitespace-nowrap">
+              <a href="https://legion.co/" target="_blank" rel="noopener noreferrer" className="link-hover inline-flex items-center">
                 Legion Technologies
                 <svg className="external-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -85,7 +85,7 @@ const About = () => {
             </p>
             <p>
               Outside of research, I'm a passionate music enthusiast with 100k+ minutes streamed per year (
-              <a href="https://open.spotify.com/user/gs0neqlxibzott12hn90ax1mm?si=0a320d232a5c4164" target="_blank" rel="noopener noreferrer" className="link-hover whitespace-nowrap">
+              <a href="https://open.spotify.com/user/gs0neqlxibzott12hn90ax1mm?si=0a320d232a5c4164" target="_blank" rel="noopener noreferrer" className="link-hover inline-flex items-center">
                 check out my Spotify
                 <svg className="external-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
