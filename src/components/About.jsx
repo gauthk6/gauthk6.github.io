@@ -27,7 +27,7 @@ const About = () => {
               studying Mathematics and Computer Science, with a focus on machine learning and AI systems.
             </p>
             <p>
-              I'm currently leading a project on Deep Research Agents under the guidance of Professor{' '}
+              I'm currently leading a project on <strong>Deep Research Agents</strong> under the guidance of Professor{' '}
               <a href="https://zhiting.ucsd.edu/" target="_blank" rel="noopener noreferrer" className="link-hover whitespace-nowrap">
                 Zhiting Hu
                 <svg className="external-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -41,14 +41,14 @@ const About = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
-              , where I previously co-authored a paper accepted to ACL 2025 on whether vision-language models understand physical dynamics. Previously, I helped develop reinforcement learning systems for neural code translation at the University of Waterloo under Professor{' '}
+              , where I previously <strong>co-authored a paper accepted to ACL 2025</strong> on whether vision-language models understand physical dynamics. Previously, I helped develop reinforcement learning systems for neural code translation at the University of Waterloo under Professor{' '}
               <a href="https://vganesh1.github.io/" target="_blank" rel="noopener noreferrer" className="link-hover whitespace-nowrap">
                 Vijay Ganesh
                 <svg className="external-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>{' '}
-              (now at Georgia Tech), resulting in an ECAI 2024 publication.
+              (now at Georgia Tech), resulting in an <strong>ECAI 2024 publication</strong>.
             </p>
             <p>
               In industry, I work as an AI Engineer Intern at a stealth startup building search agents, and previously interned at{' '}

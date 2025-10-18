@@ -20,14 +20,22 @@ const Experience = () => {
       title: 'Research Assistant',
       organization: 'Halicioglu Data Science Institute, UC San Diego',
       period: 'June 2024 – Present',
-      description: 'Leading autonomous research agent development under Professor Zhiting Hu. Co-authored ACL Findings 2025 paper on evaluating internal world models in vision-language systems.',
+      description: (
+        <>
+          Leading autonomous research agent development under Professor Zhiting Hu. <strong>Co-authored ACL Findings 2025 paper</strong> on evaluating internal world models in vision-language systems.
+        </>
+      ),
       current: true,
     },
     {
       title: 'Machine Learning Research Intern',
       organization: 'University of Waterloo',
       period: 'July 2021 – Sep. 2022',
-      description: 'Worked under Professor Vijay Ganesh (now at Georgia Tech) on neural code translation with reinforcement learning. Co-authored ECAI-2024 paper on CoTran, an LLM-based code translator.',
+      description: (
+        <>
+          Worked under Professor Vijay Ganesh (now at Georgia Tech) on neural code translation with reinforcement learning. <strong>Co-authored ECAI-2024 paper</strong> on CoTran, an LLM-based code translator.
+        </>
+      ),
       current: false,
     },
   ];
