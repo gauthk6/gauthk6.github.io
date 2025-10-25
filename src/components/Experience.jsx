@@ -1,6 +1,31 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const Experience = () => {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   const experiences = [
     {
       title: 'AI Engineer Intern (Part-Time)',
@@ -41,28 +66,44 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="section-container">
-      <h2 className="section-title">Professional Experience</h2>
-      <div className="space-y-6">
-        {experiences.map((exp, index) => (
-          <div key={index} className="card relative">
-            {exp.current && (
-              <span className="absolute top-4 right-4 bg-green-100 text-green-800 text-xs font-medium px-3 py-1 rounded-full">
-                Current
-              </span>
-            )}
-            <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-1">
-                {exp.title}
-              </h3>
-              <p className="text-primary-600 font-medium mb-2">
-                {exp.organization}
-              </p>
-              <p className="text-sm text-gray-500 mb-3">{exp.period}</p>
-              <p className="text-gray-700 leading-relaxed">{exp.description}</p>
+    <section id="experience" className="content-section">
+      <div className="section-container scroll-fade-in" ref={sectionRef}>
+        <h2 className="section-title">Professional Experience</h2>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+          {experiences.map((exp, index) => (
+            <div key={index} className="card" style={{ position: 'relative' }}>
+              {exp.current && (
+                <span className="badge" style={{
+                  position: 'absolute',
+                  top: '24px',
+                  right: '24px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '8px'
+                }}>
+                  <span style={{
+                    width: '10px',
+                    height: '10px',
+                    borderRadius: '50%',
+                    backgroundColor: 'var(--accent-subtle)',
+                    animation: 'pulse 2s ease infinite'
+                  }}></span>
+                  Now
+                </span>
+              )}
+              <div>
+                <h3 className="card-title">
+                  {exp.title}
+                </h3>
+                <p className="card-subtitle">
+                  {exp.organization}
+                </p>
+                <p className="card-meta">{exp.period}</p>
+                <div className="card-description">{exp.description}</div>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

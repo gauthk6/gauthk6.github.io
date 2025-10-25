@@ -1,6 +1,31 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const Publications = () => {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   const publications = [
     {
       title: 'Do Vision-Language Models Have Internal World Models? Towards an Atomic Evaluation',
@@ -24,34 +49,63 @@ const Publications = () => {
   ];
 
   return (
-    <section id="publications" className="section-container bg-white">
-      <h2 className="section-title">Publications</h2>
-      <div className="space-y-6">
-        {publications.map((pub, index) => (
-          <div key={index} className="card border-l-4 border-primary-500">
-            <div className="flex items-start justify-between gap-4 flex-wrap">
-              <div className="flex-1 min-w-0">
-                <h3 className="text-lg font-semibold text-gray-900 mb-2 leading-tight">
+    <section id="publications" className="content-section">
+      <div className="section-container scroll-fade-in" ref={sectionRef}>
+        <h2 className="section-title">Publications</h2>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+          {publications.map((pub, index) => (
+            <div
+              key={index}
+              className="card"
+              style={{
+                borderLeft: '6px solid var(--accent-subtle)',
+                display: 'flex',
+                alignItems: 'flex-start',
+                justifyContent: 'space-between',
+                gap: '16px',
+                flexWrap: 'wrap'
+              }}
+            >
+              <div style={{ flex: 1, minWidth: 0 }}>
+                <h3 style={{
+                  fontSize: '1.7rem',
+                  fontWeight: 700,
+                  color: 'var(--gray-warm-900)',
+                  marginBottom: '8px',
+                  lineHeight: '1.4',
+                  fontFamily: 'var(--font-display)'
+                }}>
                   {pub.title}
                 </h3>
-                <p className="text-primary-600 font-medium text-sm mb-2">
+                <p className="card-subtitle" style={{ marginBottom: '8px' }}>
                   {pub.venue}
                 </p>
-                <p className="text-gray-600 text-sm mb-3 leading-relaxed">
+                <p style={{
+                  fontSize: '0.875rem',
+                  color: 'var(--gray-warm-700)',
+                  marginBottom: '12px',
+                  lineHeight: '1.6'
+                }}>
                   {pub.authors}
                 </p>
-                <div className="flex flex-wrap gap-3">
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px' }}>
                   {pub.links.map((link, linkIndex) => (
                     <a
                       key={linkIndex}
                       href={link.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors duration-200"
+                      className="link-underline"
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        fontSize: '0.875rem',
+                        fontWeight: 700
+                      }}
                     >
                       {link.label}
                       <svg
-                        className="w-4 h-4 ml-1"
+                        className="external-link-icon"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -67,14 +121,18 @@ const Publications = () => {
                   ))}
                 </div>
               </div>
-              <div className="flex-shrink-0">
-                <span className="inline-block bg-gray-100 text-gray-700 text-sm font-medium px-3 py-1 rounded">
+              <div style={{ flexShrink: 0 }}>
+                <span className="badge" style={{
+                  backgroundColor: 'var(--cream-dark)',
+                  border: '1px solid var(--border-light)',
+                  padding: '8px 16px'
+                }}>
                   {pub.year}
                 </span>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );
