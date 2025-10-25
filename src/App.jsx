@@ -5,6 +5,7 @@ import ResearchInterests from './components/ResearchInterests';
 import Experience from './components/Experience';
 import Publications from './components/Publications';
 import Footer from './components/Footer';
+import Navigation from './components/Navigation';
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <div className={`min-h-screen transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+      <Navigation />
       <Header />
       <main>
         <About />

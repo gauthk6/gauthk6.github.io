@@ -41,24 +41,15 @@ const About = () => {
               <a
                 href="/GauthamKishore.pdf"
                 download
-                className="btn-ghost"
-                style={{ width: '200px', textDecoration: 'none' }}
+                className="link-underline"
+                style={{
+                  fontSize: '1rem',
+                  fontWeight: 600,
+                  display: 'inline-block'
+                }}
                 aria-label="Download CV as PDF"
               >
-                <svg
-                  style={{ width: '20px', height: '20px', marginRight: '8px' }}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                  />
-                </svg>
-                Download CV
+                View CV →
               </a>
             </div>
             <div style={{ flex: 1, minWidth: '300px' }}>
@@ -92,9 +83,6 @@ const About = () => {
                     Legion Technologies
                   </a>{' '}
                   developing ML pipelines for demand forecasting.
-                </p>
-                <p>
-                  I'm applying to graduate programs to pursue research in autonomous AI systems that can learn, reason, and solve complex problems.
                 </p>
                 <p>
                   Outside of research, I'm a passionate music enthusiast with 100k+ minutes streamed per year (

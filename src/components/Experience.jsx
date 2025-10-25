@@ -71,26 +71,7 @@ const Experience = () => {
         <h2 className="section-title">Professional Experience</h2>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
           {experiences.map((exp, index) => (
-            <div key={index} className="card" style={{ position: 'relative' }}>
-              {exp.current && (
-                <span className="badge" style={{
-                  position: 'absolute',
-                  top: '24px',
-                  right: '24px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '8px'
-                }}>
-                  <span style={{
-                    width: '10px',
-                    height: '10px',
-                    borderRadius: '50%',
-                    backgroundColor: 'var(--accent-subtle)',
-                    animation: 'pulse 2s ease infinite'
-                  }}></span>
-                  Now
-                </span>
-              )}
+            <div key={index} className="card">
               <div>
                 <h3 className="card-title">
                   {exp.title}
