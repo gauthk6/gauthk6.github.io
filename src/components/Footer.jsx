@@ -11,7 +11,7 @@ const Footer = () => {
       textAlign: 'center'
     }}>
       <p style={{
-        fontSize: '0.9375rem',
+        fontSize: '1rem',
         margin: 0,
         fontFamily: 'var(--font-body)'
       }}>
