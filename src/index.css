@@ -705,6 +705,17 @@
   .scroll-fade-in:nth-child(4) {
     transition-delay: 225ms;
   }
+
+  /* Center profile picture and CV button on mobile */
+  .about-flex-container {
+    justify-content: center !important;
+  }
+
+  .profile-container {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
 }
 
 /* ==================== UTILITIES ==================== */

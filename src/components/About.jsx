@@ -30,8 +30,8 @@ const About = () => {
     <section id="about" className="content-section">
       <div className="section-container scroll-fade-in" ref={sectionRef}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '48px' }}>
-          <div style={{ display: 'flex', flexDirection: 'row', gap: '48px', alignItems: 'flex-start', flexWrap: 'wrap' }}>
-            <div style={{ flexShrink: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '24px' }}>
+          <div className="about-flex-container" style={{ display: 'flex', flexDirection: 'row', gap: '48px', alignItems: 'flex-start', flexWrap: 'wrap' }}>
+            <div className="profile-container" style={{ flexShrink: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '24px' }}>
               <img
                 src="/profile_pic.jpg"
                 alt="Gautham Kishore"
