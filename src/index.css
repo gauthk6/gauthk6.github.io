@@ -508,71 +508,202 @@
   }
 }
 
+/* ==================== MOBILE-SPECIFIC ENHANCEMENTS ==================== */
 @media (max-width: 480px) {
   html {
     font-size: 14px;
   }
 
+  body {
+    line-height: 1.8;
+  }
+
+  /* Hero Section - More dramatic on mobile */
   .hero-name {
-    font-size: 2.75rem;
-    line-height: 1.1;
+    font-size: 3rem;
+    line-height: 1.05;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
   }
 
   h1 {
-    font-size: 2.75rem;
+    font-size: 3rem;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.125rem;
+    margin-bottom: 20px;
   }
 
   .section-title {
-    font-size: 2rem;
+    font-size: 2.125rem;
+    margin-bottom: 32px;
+  }
+
+  .hero-title {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
   }
 
   .hero-subtitle {
     font-size: 1.0625rem;
     max-width: 95%;
+    line-height: 1.6;
+    margin-bottom: 32px;
   }
 
+  .hero-section {
+    padding: 60px 20px 80px;
+    min-height: calc(100vh - 60px);
+  }
+
+  /* Social Links - Enhanced 2x2 Grid Layout for Mobile */
   .social-links {
-    gap: var(--space-sm);
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
   }
 
   .social-link {
-    min-width: 60px;
-    padding: 8px;
+    min-width: unset;
+    width: 100%;
+    padding: 16px 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    transition: all 0.25s ease-out;
+    min-height: 80px;
+    justify-content: center;
   }
 
-  /* Ensure adequate touch targets for mobile (minimum 44x44px) */
-  a {
-    min-height: 44px;
-    display: inline-flex;
-    align-items: center;
+  .social-link:active {
+    transform: scale(0.97);
+    background-color: rgba(255, 255, 255, 0.8);
   }
 
-  .profile-picture {
-    width: 160px;
-    height: 160px;
+  .social-link svg {
+    width: 32px !important;
+    height: 32px !important;
   }
 
+  .social-link-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+  }
+
+  /* Cards - More prominent on mobile */
   .card {
-    padding: var(--space-sm);
+    padding: 24px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(28, 25, 23, 0.04);
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+  }
+
+  .card:active {
+    transform: scale(0.99);
+    box-shadow: 0 1px 4px rgba(28, 25, 23, 0.06);
   }
 
   .card-title {
     font-size: 1.5rem;
     line-height: 1.3;
+    margin-bottom: 12px;
   }
 
+  .card-subtitle {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .card-meta {
+    font-size: 0.9375rem;
+    margin-bottom: 12px;
+  }
+
+  .card-description {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+  }
+
+  /* Enhanced touch targets for mobile usability */
+  a {
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 0;
+  }
+
+  .link-underline {
+    padding: 8px 0;
+  }
+
+  /* Section spacing optimized for mobile */
   .section-container {
-    padding: 48px var(--space-sm);
+    padding: 56px 20px;
   }
 
   .content-section {
-    margin-bottom: 60px;
+    margin-bottom: 64px;
+  }
+
+  /* Profile picture */
+  .profile-picture {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 24px;
+    border: 2px solid var(--border-light);
+    box-shadow: 0 4px 12px rgba(28, 25, 23, 0.08);
+  }
+
+  /* Improved prose reading experience on mobile */
+  .prose {
+    font-size: 1.0625rem;
+    line-height: 1.8;
+  }
+
+  .prose p {
+    margin-bottom: 1.75em;
+  }
+
+  /* Better grid gap for mobile */
+  .grid-2,
+  .grid-3 {
+    gap: 20px;
+  }
+
+  /* Enhanced animations for mobile */
+  .scroll-fade-in {
+    opacity: 0;
+    transform: translateY(15px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+
+  .scroll-fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Mobile-specific animation delays for stagger effect */
+  .scroll-fade-in:nth-child(1) {
+    transition-delay: 0ms;
+  }
+
+  .scroll-fade-in:nth-child(2) {
+    transition-delay: 75ms;
+  }
+
+  .scroll-fade-in:nth-child(3) {
+    transition-delay: 150ms;
+  }
+
+  .scroll-fade-in:nth-child(4) {
+    transition-delay: 225ms;
   }
 }
 
