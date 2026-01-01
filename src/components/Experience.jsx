@@ -28,10 +28,10 @@ const Experience = () => {
 
   const experiences = [
     {
-      title: 'AI Engineer Intern (Part-Time)',
+      title: 'Member of Technical Staff',
       organization: 'Stealth AI Startup',
       period: 'Sep. 2025 – Present',
-      description: 'Building search agents for intelligent information retrieval and discovery.',
+      description: 'building the future of commerce',
       current: true,
     },
     {
