@@ -101,7 +101,7 @@ const references = [
   },
   {
     title: 'Film. Stories that stay.',
-    body: 'Favorites: Pulp Fiction, Good Will Hunting, The Dark Knight.',
+    body: 'Favorites: Pulp Fiction, Good Will Hunting, Andhadhun.',
     image: '/visuals/reference-film.webp',
     alt: 'Film ticket stubs and monochrome cinema cards',
   },
