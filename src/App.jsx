@@ -70,10 +70,10 @@ const credentials = [
     detail: 'CoTran, ECAI 2024',
   },
   {
-    year: '',
+    year: '2022 — 2026',
     title: 'UC San Diego',
-    place: 'Mathematics & Computer Science',
-    detail: '',
+    place: 'B.S. Mathematics & Computer Science',
+    detail: 'Graduating June 2026',
   },
 ];
 
@@ -158,8 +158,8 @@ function App() {
           <div className="hero-copy reveal reveal-1">
             <SectionKicker number="01" />
             <h1 id="hero-title">Gautham<br />Kishore</h1>
-            <p className="role">ML Researcher &amp; Engineer</p>
-            <p className="place">UC San Diego — Mathematics &amp; Computer Science<br />San Diego, California</p>
+            <p className="role">Member of Technical Staff, Bliss Labs</p>
+            <p className="place">Ongoing research: Deep Research Agents at <span className="place-affiliation">HDSI, UC San Diego</span><br />San Diego, California</p>
             <div className="short-rule" />
             <p className="statement">I build systems that think, search, and create.</p>
             <div className="hero-links" aria-label="Contact links">
@@ -230,7 +230,7 @@ function App() {
             <h2>About</h2>
             <div className="about-content">
               <div className="about-text">
-                <p>I’m a fourth-year undergraduate at UC San Diego studying Mathematics and Computer Science.</p>
+                <p>I’m a machine learning researcher and engineer working at the intersection of research and product systems.</p>
                 <p>My work sits between research and engineering, with a focus on agents, retrieval, multimodal systems, and code.</p>
                 <p>Recently, I’ve been building autonomous research agents that maintain internal knowledge and conduct multi-step investigation.</p>
                 <p>Outside of work, I spend time around film, music, and sport — things that shape how I think and build.</p>
