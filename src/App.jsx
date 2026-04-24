@@ -159,7 +159,7 @@ function App() {
             <SectionKicker number="01" />
             <h1 id="hero-title">Gautham<br />Kishore</h1>
             <p className="role">Member of Technical Staff, Bliss Labs</p>
-            <p className="place">Ongoing research: Deep Research Agents at <span className="place-affiliation">HDSI, UC San Diego</span><br />San Diego, California</p>
+            <p className="place"><span className="place-affiliation">Mathematics &amp; Computer Science, UC San Diego</span><br />San Francisco, CA</p>
             <div className="short-rule" />
             <p className="statement">I build systems that think, search, and create.</p>
             <div className="hero-links" aria-label="Contact links">
