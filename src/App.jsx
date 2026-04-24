@@ -233,7 +233,7 @@ function App() {
                 <p>I’m a machine learning researcher and engineer working at the intersection of research and product systems.</p>
                 <p>My work sits between research and engineering, with a focus on agents, retrieval, multimodal systems, and code.</p>
                 <p>Recently, I’ve been building autonomous research agents that maintain internal knowledge and conduct multi-step investigation.</p>
-                <p>Outside of work, I spend time around film, music, and sport — things that shape how I think and build.</p>
+                <p>Outside of work, I'm passionate about music and sports, and have been a long-time Warriors and 49ers fan.</p>
               </div>
               <img src="/visuals/shelf-archive.webp" alt="Personal shelf with books, records, film tickets, and sports objects" width="1672" height="941" loading="lazy" decoding="async" />
             </div>
